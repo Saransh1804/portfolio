@@ -1,0 +1,93 @@
+.portfolio {
+    position: relative;
+
+    .progress {
+        position: sticky;
+        top: 0;
+        left: 0;
+        padding-top: 50px;
+        text-align: center;
+        color: orange;
+        font-size: 36px;
+
+        .progressBar {
+            height: 10px;
+            background-color: white;
+        }
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        overflow: hidden;
+        height: 100%;
+
+        .wrapper {
+            max-width: 1220px;
+            height: 100%;
+            margin: auto;
+            display: flex;
+            gap: 60px;
+            align-items: center;
+            justify-content: center;
+
+            .imageContainer {
+                display: flex;
+                flex: 1;
+                height: 48%;
+                -webkit-box-shadow: 6px 6px 39px 1px rgba(138,138,138,0.72);
+                -moz-box-shadow: 6px 6px 39px 1px rgba(138,138,138,0.72);
+                box-shadow: 6px 6px 39px 1px rgba(138,138,138,0.72);
+                border-radius: 20px;
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+                border-radius: 20px;
+                
+            }
+
+            .infoextractor {
+                object-fit: cover;
+            }
+
+            .textContainer {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+
+                h2 {
+                    font-size: 72px;
+                }
+
+                p {
+                    color: gray;
+                    font-size: 20px;
+                }
+
+                .buttons {
+                    display: flex;
+                    gap: 15px;
+
+                    .Code {
+                        background-color: grey;
+                    }
+                }
+
+                button {
+                    background-color: orange;
+                    border: none;
+                    border-radius: 10px;
+                    padding: 10px;
+                    width: 200px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
